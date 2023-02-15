@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Vthrift Shop"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambarscroll"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="Vthrift Shop, tempat thrifting terupdate, terkeren, dan terlengkap se depok. Mulai dari normal item hingga rare item semuanya ada di sini!. Tunggu apa lagi? Ayo lihat koleksi kami hanya di Vthrift Shop."/>
+
+    <Button
+        android:id="@+id/btkoleksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textabout"
+        android:text="Koleksi Thrift" />
+
+    <HorizontalScrollView
+        android:id="@+id/gambarscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/s1"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/t1" />
+
+            <ImageView
+                android:id="@+id/s2"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/t2" />
+
+            <ImageView
+                android:id="@+id/s3"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/t3" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bthome"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_home_24"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btlist"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_collections_24"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btlocation"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_location_on_24"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"/>
+
+        <Button
+            android:id="@+id/btlogout"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_logout_24"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#fff"/>
+    </LinearLayout>
+</RelativeLayout>
